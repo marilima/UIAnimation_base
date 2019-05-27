@@ -10,7 +10,6 @@
 		1EF3C977229C59ED005A5B40 /* BronzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3C976229C59ED005A5B40 /* BronzeViewController.swift */; };
 		1EF3C979229C7663005A5B40 /* SilverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3C978229C7663005A5B40 /* SilverViewController.swift */; };
 		1EF3C97B229C7FD4005A5B40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3C97A229C7FD4005A5B40 /* LoginViewController.swift */; };
-		1EF3C97D229C826C005A5B40 /* GoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3C97C229C826C005A5B40 /* GoldViewController.swift */; };
 		778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE9D1229BF77300F5483E /* AppDelegate.swift */; };
 		778CE9D4229BF77300F5483E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE9D3229BF77300F5483E /* ViewController.swift */; };
 		778CE9D7229BF77300F5483E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D5229BF77300F5483E /* Main.storyboard */; };
@@ -22,7 +21,6 @@
 		1EF3C976229C59ED005A5B40 /* BronzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeViewController.swift; sourceTree = "<group>"; };
 		1EF3C978229C7663005A5B40 /* SilverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverViewController.swift; sourceTree = "<group>"; };
 		1EF3C97A229C7FD4005A5B40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1EF3C97C229C826C005A5B40 /* GoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldViewController.swift; sourceTree = "<group>"; };
 		778CE9CE229BF77300F5483E /* UIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778CE9D1229BF77300F5483E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778CE9D3229BF77300F5483E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				1EF3C976229C59ED005A5B40 /* BronzeViewController.swift */,
 				1EF3C978229C7663005A5B40 /* SilverViewController.swift */,
 				1EF3C97A229C7FD4005A5B40 /* LoginViewController.swift */,
-				1EF3C97C229C826C005A5B40 /* GoldViewController.swift */,
 				778CE9D5229BF77300F5483E /* Main.storyboard */,
 				778CE9D8229BF77600F5483E /* Assets.xcassets */,
 				778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */,
@@ -149,7 +146,6 @@
 			files = (
 				1EF3C977229C59ED005A5B40 /* BronzeViewController.swift in Sources */,
 				1EF3C979229C7663005A5B40 /* SilverViewController.swift in Sources */,
-				1EF3C97D229C826C005A5B40 /* GoldViewController.swift in Sources */,
 				778CE9D4229BF77300F5483E /* ViewController.swift in Sources */,
 				1EF3C97B229C7FD4005A5B40 /* LoginViewController.swift in Sources */,
 				778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */,
