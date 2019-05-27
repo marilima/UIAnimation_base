@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qw9-3v-NmT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bronze-->
+        <scene sceneID="lHF-dN-ARc">
+            <objects>
+                <viewController id="LaB-eW-x7h" customClass="BronzeViewController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8N2-mN-kSu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world1" translatesAutoresizingMaskIntoConstraints="NO" id="lXI-TU-9ju">
+                                <rect key="frame" x="0.0" y="199" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="lqO-Bu-c9X">
+                                <rect key="frame" x="159" y="342" width="96" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8t9-6H-c28">
+                                <rect key="frame" x="140" y="377" width="248" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Vermelho"/>
+                                    <segment title="Roxinho"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedTap:" destination="LaB-eW-x7h" eventType="valueChanged" id="RUQ-y7-SKb"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2nI-w7-VyP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bronze" image="icon4" id="VvG-JI-ieX"/>
+                    <connections>
+                        <outlet property="moon" destination="lXI-TU-9ju" id="M6y-PQ-TNZ"/>
+                        <outlet property="rocket" destination="lqO-Bu-c9X" id="LLT-Oc-YI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ga-1z-lVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1372.4637681159422" y="1279.6875"/>
+        </scene>
+        <!--Prata-->
+        <scene sceneID="bJA-Hh-BCp">
+            <objects>
+                <viewController id="4ND-yu-RVr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BK3-NW-hqi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Ip-rs-mOl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Prata" image="icon3" id="Cqx-qd-e1W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFR-NQ-Iyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="1280"/>
+        </scene>
+        <!--Ouro-->
+        <scene sceneID="VPQ-z8-7lg">
+            <objects>
+                <viewController id="Ctb-Ec-WkQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7op-CT-CGV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jHD-q1-V5e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ouro" image="icon2" id="eHD-EZ-fOp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSG-TD-Ch4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="1280"/>
+        </scene>
+        <!--Base-->
+        <scene sceneID="F1L-Fx-mba">
+            <objects>
+                <viewController id="ann-cb-b2r" customClass="ViewController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JqL-BI-YnF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world1" translatesAutoresizingMaskIntoConstraints="NO" id="rez-lf-ilS">
+                                <rect key="frame" x="0.0" y="199" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="C1x-nH-jru">
+                                <rect key="frame" x="159" y="342" width="96" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="QYu-IY-owY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Base" image="icon1" selectedImage="icon1" id="lap-bA-RHR"/>
+                    <connections>
+                        <outlet property="moon" destination="rez-lf-ilS" id="8V2-Tl-Xwt"/>
+                        <outlet property="rocket" destination="C1x-nH-jru" id="aeh-cb-bAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIb-nC-bBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413.04347826086962" y="499.55357142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Mg-5s-uY3">
+            <objects>
+                <tabBarController id="Qw9-3v-NmT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="SIt-Md-AcL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.24705882352941178" blue="0.31372549019607843" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="shadowImage"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.098039215686274508" green="0.14117647058823529" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ann-cb-b2r" kind="relationship" relationship="viewControllers" id="1iU-9B-4wg"/>
+                        <segue destination="LaB-eW-x7h" kind="relationship" relationship="viewControllers" id="RH7-CG-Wzf"/>
+                        <segue destination="4ND-yu-RVr" kind="relationship" relationship="viewControllers" id="qIK-NF-g4n"/>
+                        <segue destination="Ctb-Ec-WkQ" kind="relationship" relationship="viewControllers" id="28H-E3-O01"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0V-f4-Xnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506" y="500"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon1" width="25" height="25"/>
+        <image name="icon2" width="25" height="25"/>
+        <image name="icon3" width="25" height="25"/>
+        <image name="icon4" width="25" height="25"/>
+        <image name="rocket" width="173" height="308"/>
+        <image name="world1" width="2256" height="2256"/>
+    </resources>
+</document>
