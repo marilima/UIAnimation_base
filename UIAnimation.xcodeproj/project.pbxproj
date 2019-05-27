@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7624CE4E229C5E8E007F74B4 /* BronzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624CE4D229C5E8E007F74B4 /* BronzeViewController.swift */; };
+		7624CE50229C5E97007F74B4 /* SilverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624CE4F229C5E97007F74B4 /* SilverViewController.swift */; };
+		7624CE52229C5E9F007F74B4 /* GoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624CE51229C5E9F007F74B4 /* GoldViewController.swift */; };
+		7624CE54229C85AE007F74B4 /* Silver2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624CE53229C85AE007F74B4 /* Silver2ViewController.swift */; };
 		778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE9D1229BF77300F5483E /* AppDelegate.swift */; };
 		778CE9D4229BF77300F5483E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE9D3229BF77300F5483E /* ViewController.swift */; };
 		778CE9D7229BF77300F5483E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D5229BF77300F5483E /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7624CE4D229C5E8E007F74B4 /* BronzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeViewController.swift; sourceTree = "<group>"; };
+		7624CE4F229C5E97007F74B4 /* SilverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverViewController.swift; sourceTree = "<group>"; };
+		7624CE51229C5E9F007F74B4 /* GoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldViewController.swift; sourceTree = "<group>"; };
+		7624CE53229C85AE007F74B4 /* Silver2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silver2ViewController.swift; sourceTree = "<group>"; };
 		778CE9CE229BF77300F5483E /* UIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778CE9D1229BF77300F5483E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778CE9D3229BF77300F5483E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 			children = (
 				778CE9D1229BF77300F5483E /* AppDelegate.swift */,
 				778CE9D3229BF77300F5483E /* ViewController.swift */,
+				7624CE4D229C5E8E007F74B4 /* BronzeViewController.swift */,
+				7624CE4F229C5E97007F74B4 /* SilverViewController.swift */,
+				7624CE53229C85AE007F74B4 /* Silver2ViewController.swift */,
+				7624CE51229C5E9F007F74B4 /* GoldViewController.swift */,
 				778CE9D5229BF77300F5483E /* Main.storyboard */,
 				778CE9D8229BF77600F5483E /* Assets.xcassets */,
 				778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */,
@@ -135,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7624CE54229C85AE007F74B4 /* Silver2ViewController.swift in Sources */,
+				7624CE52229C5E9F007F74B4 /* GoldViewController.swift in Sources */,
+				7624CE4E229C5E8E007F74B4 /* BronzeViewController.swift in Sources */,
+				7624CE50229C5E97007F74B4 /* SilverViewController.swift in Sources */,
 				778CE9D4229BF77300F5483E /* ViewController.swift in Sources */,
 				778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PV6ZXMXKDK;
+				DEVELOPMENT_TEAM = 4BUKN8ST5B;
 				INFOPLIST_FILE = "$(SRCROOT)/UIAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PV6ZXMXKDK;
+				DEVELOPMENT_TEAM = 4BUKN8ST5B;
 				INFOPLIST_FILE = "$(SRCROOT)/UIAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

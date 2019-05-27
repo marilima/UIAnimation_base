@@ -9,10 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var rocket: UIImageView!
+    @IBOutlet weak var world: UIImageView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        // bounds - conteúdo dentro do frame
+        // frame - escala e posicionamento
+        // center - movimentação na tela
+        
+        self.rocket.center.x = self.view.center.x
+        self.rocket.frame.size.height = self.view.frame.size.height * 0.30
+        
+        self.world.frame.size.width = self.view.frame.size.width
+        self.world.center.x = self.view.center.x
+        self.world.center.y = self.view.frame.height
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 5.0, delay: 0, options: [.curveEaseOut], animations: {
+            self.rocket.center.y = self.world.center.y - self.world.frame.height / 2
+        }, completion: { finished in
+            self.rocket.image = #imageLiteral(resourceName: "rocket2")
+        })
     }
 
 
