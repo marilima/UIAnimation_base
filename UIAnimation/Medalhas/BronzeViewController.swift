@@ -17,6 +17,20 @@ class BronzeViewController: UIViewController {
     var inicio:CGPoint = CGPoint()
     var final:CGPoint = CGPoint()
     
+    @IBAction func segmentation(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex
+        {
+        case 0:
+            sender.tintColor = #colorLiteral(red: 0.2631746531, green: 0.3594709039, blue: 0.4427573681, alpha: 1)
+            self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        case 1:
+            sender.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            self.view.backgroundColor = #colorLiteral(red: 0.2631746531, green: 0.3594709039, blue: 0.4427573681, alpha: 1)
+        default:
+            break
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

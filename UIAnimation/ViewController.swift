@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var world: UIImageView!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
