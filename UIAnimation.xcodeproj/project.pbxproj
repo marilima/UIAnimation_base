@@ -12,6 +12,8 @@
 		778CE9D7229BF77300F5483E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D5229BF77300F5483E /* Main.storyboard */; };
 		778CE9D9229BF77600F5483E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D8229BF77600F5483E /* Assets.xcassets */; };
 		778CE9DC229BF77600F5483E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */; };
+		BCC4EFB0229C622800AA9294 /* BronzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4EFAF229C622800AA9294 /* BronzeViewController.swift */; };
+		BCC4EFB2229C7C8F00AA9294 /* SilverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC4EFB1229C7C8F00AA9294 /* SilverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		778CE9D8229BF77600F5483E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778CE9DB229BF77600F5483E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778CE9DD229BF77600F5483E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC4EFAF229C622800AA9294 /* BronzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeViewController.swift; sourceTree = "<group>"; };
+		BCC4EFB1229C7C8F00AA9294 /* SilverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				778CE9D1229BF77300F5483E /* AppDelegate.swift */,
 				778CE9D3229BF77300F5483E /* ViewController.swift */,
+				BCC4EFAF229C622800AA9294 /* BronzeViewController.swift */,
+				BCC4EFB1229C7C8F00AA9294 /* SilverViewController.swift */,
 				778CE9D5229BF77300F5483E /* Main.storyboard */,
 				778CE9D8229BF77600F5483E /* Assets.xcassets */,
 				778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC4EFB0229C622800AA9294 /* BronzeViewController.swift in Sources */,
+				BCC4EFB2229C7C8F00AA9294 /* SilverViewController.swift in Sources */,
 				778CE9D4229BF77300F5483E /* ViewController.swift in Sources */,
 				778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */,
 			);
