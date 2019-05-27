@@ -13,14 +13,41 @@
         <!--Bronze-->
         <scene sceneID="lHF-dN-ARc">
             <objects>
-                <viewController id="LaB-eW-x7h" sceneMemberID="viewController">
+                <viewController id="LaB-eW-x7h" customClass="BronzeController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8N2-mN-kSu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZNv-E9-Nld">
+                                <rect key="frame" x="147" y="44" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Azul"/>
+                                    <segment title="Rosa"/>
+                                </segments>
+                                <color key="tintColor" red="0.67843137249999996" green="0.21176470589999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedClick:" destination="LaB-eW-x7h" eventType="valueChanged" id="QVy-zB-Ujv"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world1" translatesAutoresizingMaskIntoConstraints="NO" id="T0k-g4-iLG">
+                                <rect key="frame" x="0.0" y="399" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="R3F-as-wrj">
+                                <rect key="frame" x="159" y="286" width="96" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="2nI-w7-VyP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bronze" image="icon4" id="VvG-JI-ieX"/>
+                    <connections>
+                        <outlet property="rocket" destination="R3F-as-wrj" id="lYz-ah-wVm"/>
+                        <outlet property="world" destination="T0k-g4-iLG" id="y6b-gH-a1D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ga-1z-lVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,39 +56,143 @@
         <!--Prata-->
         <scene sceneID="bJA-Hh-BCp">
             <objects>
-                <viewController id="4ND-yu-RVr" sceneMemberID="viewController">
+                <viewController id="4ND-yu-RVr" customClass="PrataController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BK3-NW-hqi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world1" translatesAutoresizingMaskIntoConstraints="NO" id="kft-iw-W5H">
+                                <rect key="frame" x="0.0" y="397" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-On-lEB">
+                                <rect key="frame" x="159" y="284" width="96" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-Ig-ZbI">
+                                <rect key="frame" x="131" y="141" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5p7-TT-D2g">
+                                <rect key="frame" x="131" y="179" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fugete" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAa-pI-IFT">
+                                <rect key="frame" x="163" y="97" width="90" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROH-gY-opJ">
+                                <rect key="frame" x="246" y="217" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="btnTap:" destination="4ND-yu-RVr" eventType="touchUpInside" id="J88-hz-c8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Ip-rs-mOl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Prata" image="icon3" id="Cqx-qd-e1W"/>
+                    <connections>
+                        <outlet property="btnEntrar" destination="ROH-gY-opJ" id="wgX-L2-c2J"/>
+                        <outlet property="lblNome" destination="GAa-pI-IFT" id="b4O-wa-wfj"/>
+                        <outlet property="rocket" destination="cMk-On-lEB" id="7j8-ju-8zn"/>
+                        <outlet property="txtLogin" destination="6MX-Ig-ZbI" id="0fY-3h-CNv"/>
+                        <outlet property="txtSenha" destination="5p7-TT-D2g" id="ZbC-Gh-ufS"/>
+                        <outlet property="world" destination="kft-iw-W5H" id="Ut3-mo-mya"/>
+                        <segue destination="gs5-mt-CWM" kind="presentation" identifier="didLogin" id="mes-HV-oNy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFR-NQ-Iyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-507" y="1280"/>
+            <point key="canvasLocation" x="-507.24637681159425" y="1279.6875"/>
+        </scene>
+        <!--Did Login Controller-->
+        <scene sceneID="BNd-xd-OAf">
+            <objects>
+                <viewController id="gs5-mt-CWM" customClass="DidLoginController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8d1-zz-azn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2p-ZZ-tXT">
+                                <rect key="frame" x="57" y="322" width="301" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="btnTap:" destination="gs5-mt-CWM" eventType="touchUpInside" id="092-dN-gro"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VTr-tX-LLs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXM-Mj-UhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507.24637681159425" y="1954.6875"/>
         </scene>
         <!--Ouro-->
         <scene sceneID="VPQ-z8-7lg">
             <objects>
-                <viewController id="Ctb-Ec-WkQ" sceneMemberID="viewController">
+                <viewController id="Ctb-Ec-WkQ" customClass="OuroController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7op-CT-CGV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bI1-kn-F3e">
+                                <rect key="frame" x="80" y="54" width="254" height="254"/>
+                                <color key="backgroundColor" red="0.67843137249999996" green="0.21176470589999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="mcD-rE-mhD"/>
+                                    <constraint firstAttribute="width" constant="254" id="qcP-w3-7sf"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hnu-vS-5n6" appends="YES" id="NQn-Lm-m6N"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bI1-kn-F3e" firstAttribute="leading" secondItem="jHD-q1-V5e" secondAttribute="leading" constant="80" id="jpN-Va-7eD"/>
+                            <constraint firstItem="bI1-kn-F3e" firstAttribute="top" secondItem="jHD-q1-V5e" secondAttribute="top" constant="10" id="oQJ-kc-RdD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jHD-q1-V5e"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ouro" image="icon2" id="eHD-EZ-fOp"/>
+                    <connections>
+                        <outlet property="card" destination="bI1-kn-F3e" id="ka6-kg-adT"/>
+                        <outlet property="heightConstraint" destination="mcD-rE-mhD" id="hDe-tI-Rm9"/>
+                        <outlet property="leadingConstraint" destination="jpN-Va-7eD" id="GbS-c0-li4"/>
+                        <outlet property="topConstraint" destination="oQJ-kc-RdD" id="GZ9-tl-RvJ"/>
+                        <outlet property="widthConstraint" destination="qcP-w3-7sf" id="AkX-gl-fcQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSG-TD-Ch4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hnu-vS-5n6">
+                    <connections>
+                        <action selector="tapOccur:" destination="Ctb-Ec-WkQ" id="gtU-a3-1TF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="413" y="1280"/>
+            <point key="canvasLocation" x="411.59420289855075" y="1279.6875"/>
         </scene>
         <!--Base-->
         <scene sceneID="F1L-Fx-mba">
             <objects>
-                <viewController id="ann-cb-b2r" sceneMemberID="viewController">
+                <viewController id="ann-cb-b2r" customClass="ViewController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JqL-BI-YnF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +210,10 @@
                         <viewLayoutGuide key="safeArea" id="QYu-IY-owY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Base" image="icon1" selectedImage="icon1" id="lap-bA-RHR"/>
+                    <connections>
+                        <outlet property="rocket" destination="C1x-nH-jru" id="I5x-8o-yn7"/>
+                        <outlet property="world" destination="rez-lf-ilS" id="CdS-6t-gKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIb-nC-bBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
