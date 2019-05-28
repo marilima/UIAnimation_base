@@ -1,17 +1,18 @@
 //
-//  ViewController.swift
-//  UIAnimation_base
+//  CircularViewController.swift
+//  UIAnimation
 //
-//  Created by Pedro Cacique on 27/05/19.
+//  Created by Rayane Xavier on 27/05/19.
 //  Copyright © 2019 Pedro Cacique. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var Lua: UIImageView!
+class CircularViewController: UIViewController {
+    
     @IBOutlet weak var Foguetinho: UIImageView!
+    
+    @IBOutlet weak var Lua: UIImageView!
     
     override func viewDidLoad() {
         
@@ -20,22 +21,22 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 2.0, delay: 1, options: [ .curveEaseOut], animations: {
-            // options: opcional de colocar
-            // repeat: repete a animacao, autoreverse: faz o efeito contrario da animacao, curveEaseIn: comeca lento e depois acelera, curveEaseOut: comeca rapido e depois desacelera, curveEaseInOut: suave, acelera, suave.
-            self.Foguetinho.center.y = self.view.frame.height - self.Lua.frame.height/2
-            self.Foguetinho.transform = self.Foguetinho.transform.rotated(by: .pi)
-            // transforma: transforma o objeto durante a animacao, rotated: roda em 180 gruas o objeto
-            self.Foguetinho.transform = self.Foguetinho.transform.scaledBy(x: 2, y: 2)
-            // aumenta o objeto pelo dobro do tamanho
-    }, completion: {finished in
-    //            self.Foquetinho.image = UIImage(named: "rocket2.png")
-        self.outraAnimacao()
 
-    })
-}
-
-
+        let circlePath = UIBezierPath(arcCenter: self.Lua.center, radius: self.Lua.frame.height, startAngle: 0, endAngle: .pi*2, clockwise: true)
+        let animation = CAKeyframeAnimation(keyPath: #keyPath(CALayer.position))
+        animation.duration = 5.0
+        animation.repeatCount = MAXFLOAT
+        animation.path = circlePath.cgPath
+        
+        Foguetinho.layer.add(animation,forKey: nil)
+        
+        let circleLayer = CAShapeLayer()
+        circleLayer.path = circlePath.cgPath
+        circleLayer.strokeColor = UIColor.white.cgColor
+        circleLayer.fillColor = UIColor.clear.cgColor
+        self.view.layer.addSublayer(circleLayer)
+    }
+    
     func outraAnimacao(){
         UIView.animate(withDuration: 2.0, animations: {
             self.Foguetinho.center.x = self.view.frame.width
