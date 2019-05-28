@@ -57,10 +57,10 @@ class BronzeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         //        [.repeat,.autoreverse,.curveEaseIn]
-        myPath.move(to: CGPoint(x: self.rocket.center.x, y: self.rocket.frame.size.height + self.rocket.frame.height*3))
+        myPath.move(to: CGPoint(x: self.rocket.center.x, y: self.rocket.frame.size.height + self.rocket.frame.height*4))
         
         
-        UIView.animate(withDuration: 7, delay: 0, options: [.curveLinear] , animations: {
+        UIView.animate(withDuration: 6, delay: 0, options: [.curveLinear] , animations: {
             self.rocket.center.y = self.world.center.y - self.world.frame.size.height/2 - self.rocket.frame.size.height/2
             //            self.rocket.transform = self.rocket.transform.rotated(by: CGFloat(Double.pi))   rotates the rocket
             
@@ -69,7 +69,7 @@ class BronzeViewController: UIViewController {
             self.myShapeLayer.removeFromSuperlayer()
         }
         
-        myPath.addLine(to: CGPoint(x: self.rocket.center.x, y: self.world.center.y - self.rocket.frame.height/4))
+        myPath.addLine(to: CGPoint(x: self.rocket.center.x, y: self.world.center.y))
         
         myShapeLayer.strokeColor = UIColor.red.cgColor
         myShapeLayer.lineWidth = 6
