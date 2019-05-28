@@ -31,6 +31,8 @@ class OuroViewController: UIViewController {
         self.myCard.center = window.center
         
         originalFrame = myCard.frame
+        
+        self.view.frame.size.height += self.tabBarController?.tabBar.frame.size.height ?? 0
     }
     
     @IBAction func cardTouched() {
@@ -43,6 +45,7 @@ class OuroViewController: UIViewController {
     }
     
     func openCard() {
+        
         // Move Up a little bit
         UIView.animate(withDuration: 0.15) {
             self.myCard.center.y -= 30
@@ -51,6 +54,7 @@ class OuroViewController: UIViewController {
         // Bounce Up
         UIView.animate(withDuration: 0.35, delay: 0.15, options: [.curveEaseIn], animations: {
             
+            self.tabBarController?.tabBar.center.y += 100
             self.changeSize(withInsetW: 20, andInsetH: 20)
             
         }) { completed in
@@ -58,7 +62,7 @@ class OuroViewController: UIViewController {
             // Bounce Down
             UIView.animate(withDuration: 0.2, delay: 0.2, options: [.curveEaseIn], animations: {
                 
-                self.tabBarController?.tabBar.isHidden = true
+                
                 self.changeSize(withInsetW: -5, andInsetH: -5)
                 
             }, completion: { completed in
@@ -86,6 +90,7 @@ class OuroViewController: UIViewController {
         // Bounce Down
         UIView.animate(withDuration: 0.35, delay: 0.15, options: [.curveEaseIn], animations: {
             
+            self.tabBarController?.tabBar.center.y -= 100
             self.changeSize(using: self.originalFrame, withInsetW: -20, andInsetH: -20)
             
         }) { completed in
