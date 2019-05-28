@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PrataViewController: UIViewController {
+class PrataViewController: UIViewController, UITextFieldDelegate {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -23,6 +23,9 @@ class PrataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        username.delegate = self
+        password.delegate = self
         
         loginButton.layer.cornerRadius = 8.0
         loginButton.layer.masksToBounds = true
@@ -96,5 +99,14 @@ class PrataViewController: UIViewController {
             })
             
         })
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
